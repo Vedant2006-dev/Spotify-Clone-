@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <!--Sidebar Manue-->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-options" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <a href="#">Search</a> -->
+                    <input type="button" placeholder="search" value="">
+                </div>
+            </div>
+
+        <!--library Manue-->
+           <div class="library">
+                <div class="options nav-options">
+                    <div class="lib-options">
+                        <img src="assets/library_icon.png" alt="error">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!--  lib-box must be inside .library -->
+                <div class="lib-box">
+                    <div class="box1">
+                        <div class="box-p1">Create your first playlist</div>&nbsp;&nbsp
+                        <div class="box-p2">It's easy, We'll help you</div>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <div class="box2">
+                        <div class="box-p1" style="padding-right: 40px;">Let's find some Podcast to follow</div>&nbsp;&nbsp
+                        <div class="box-p2" style="padding-right: 55px;">We'll keep your update on new episodes</div>
+                        <button class="badge">Browse Podcast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <!-- Main Containt Navigation bar -->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="assets/backward_icon.png" alt="error">
+                    <img src="assets/forward_icon.png" alt="error" class="primium">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge primium">Explore Primium</button>
+                    <button class="badge install"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <!-- Cards of diplay list -->
+            <div class="cards">
+                <h2>Recently played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="assets/card1img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily update of the most played track...</p>
+                    </div>
+                </div>
+
+                 <h2>Trending now near you</h2>
+                <div class="cards-container trending">
+                    <div class="card">
+                        <img src="assets/card2img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Mahiye Jinna sohna...</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+
+                     <div class="card">
+                        <img src="assets/card3img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Mere paas tum ho...</p>
+                        <p class="card-info">Navid Nashad...</p>
+                    </div>
+
+                     <div class="card">
+                        <img src="assets/card4img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Alter Ego na...</p>
+                        <p class="card-info">Arjit singh</p>
+                    </div>
+
+                     <div class="card">
+                        <img src="assets/pasoori.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Pasoori Nu (From "s...</p>
+                        <p class="card-info">Arijit Singh, Rochak Kohli, Tulsi Kumar</p>
+                    </div>
+
+                     <div class="card">
+                        <img src="assets/Khalasi.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Khalasi (Remix pack..</p>
+                        <p class="card-info">Aditya Gadhavi, Achint Thakkar</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/card9.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Yarning Up</p>
+                        <p class="card-info">Carolin kell</p>
+                    </div>
+                </div>
+                <h2>Trending Podcast</h2>
+                <div class="cards-container trending">
+                    <div class="card">
+                        <img src="assets/Ghost.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">The Ghost Files</p>
+                        <p class="card-info">The Untold Stories about Ghost...</p>
+                    </div>
+
+                      <div class="card">
+                        <img src="assets/card9.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Yarning Up</p>
+                        <p class="card-info">Carolin kell</p>
+                    </div>
+
+                      <div class="card">
+                        <img src="assets/card7.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Good Hang</p>
+                        <p class="card-info">Amy Pohiler</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/Bussness.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">The Bussness Trip</p>
+                        <p class="card-info">PsyMed Ventures</p>
+                    </div>
+
+                </div>
+
+                <h2>Featured Chart</h2>
+                <div class="cards-container trending">
+                    <div class="card">
+                        <img src="assets/card5img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Top Songs - Globel</p>
+                        <p class="card-info">Your weekly update of the most played tracks right...</p>
+                    </div>
+                    
+                     <div class="card">
+                        <img src="assets/card6img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-info">Your weekly update of the most played tracks right...</p>
+                    </div>
+
+                      <div class="card">
+                        <img src="assets/spain.png" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Top 50 - Spain</p>
+                        <p class="card-info">Your Weekly update of most played tracks right...</p>
+                    </div>
+
+                     <div class="card">
+                        <img src="assets/card1img.jpeg" alt="error your internet connection may not be sufficient" class="card-img">
+                        <p class="card-title">Top 50 - Globel</p>
+                        <p class="card-info">Your Daily update of most played tracks right...</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Footer terminal -->
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+
+
+        <!-- Music player -->
+        <div class="music-player">
+
+            <!-- for Album -->
+            <div class="album">
+              <div class="player-icon">
+                <img src="assets/pasoori.png" alt="Error">
+              </div>
+              <div class="player-para">
+                <p style="margin: 0.8rem 0 0.2rem 0; font-weight: bold;">Pasoori Nu (From "s...</p>
+                <p  style="margin: 0.1rem 0 0.3rem 0; opacity: 0.7;">Arijit singh</p>
+              </div>
+              <div class="player-icon2">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+              </div>
+            </div>
+
+            <!-- for player  -->
+            <div class="player">
+                <div class="player-cantrol">
+                    <img src="assets/player_icon1.png" alt="Error" class="player-cantrol-icon">
+                    <img src="assets/player_icon2.png" alt="Error" class="player-cantrol-icon">
+                    <img src="assets/player_icon3.png" alt="Error" class="player-cantrol-icon" style="opacity: 1; height: 2rem;">
+                    <img src="assets/player_icon4.png" alt="Error" class="player-cantrol-icon">
+                    <img src="assets/player_icon5.png" alt="Error" class="player-cantrol-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">03:33</span>
+                </div>
+            </div>
+            <div class="cantrol"></div>
+        </div>
+    </div>
+</body>
+</html>
